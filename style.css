@@ -522,7 +522,7 @@ main {
 .card-body {
   display: flex;
   flex-direction: column;
-  gap: 0;
+  gap: 24px;
 }
 
 .card-body p {
@@ -896,8 +896,7 @@ main {
    RESPONSIVE — SMALL TABLET  ≤ 768px
 ================================================================ */
 @media (max-width: 768px) {
-  /* Services — stack to single column on narrow tablets */
-  .services-grid { grid-template-columns: 1fr; gap: 20px; }
+  /* Services remains 2-column down to mobile — handled at ≤680px */
 }
 
 /* ================================================================
