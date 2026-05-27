@@ -51,8 +51,18 @@ document.querySelectorAll(hoverTargets).forEach(el => {
 });
 
 /* ── STICKY HEADER ───────────────────────────────────────────── */
+// Hysteresis thresholds: add class at 24px, remove only when back below 8px.
+// A single threshold causes rapid on/off toggling near the boundary, which
+// produces visible jitter as the header height oscillates.
+const SCROLL_ON  = 24;
+const SCROLL_OFF = 8;
 window.addEventListener('scroll', () => {
-  header.classList.toggle('is-scrolled', window.scrollY > 24);
+  const y = window.scrollY;
+  if (!header.classList.contains('is-scrolled') && y > SCROLL_ON) {
+    header.classList.add('is-scrolled');
+  } else if (header.classList.contains('is-scrolled') && y < SCROLL_OFF) {
+    header.classList.remove('is-scrolled');
+  }
 }, { passive: true });
 
 /* ── PAGE NAVIGATION ─────────────────────────────────────────── */
