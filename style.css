@@ -948,14 +948,15 @@ main {
   .clients-intro   { margin-bottom: 32px; }
   .clients-caption { font-size: 15px; }
 
-  /* About */
-  .about-card       { padding: 28px 20px; gap: 28px; }
-  .about-bottom     { grid-template-columns: 1fr; gap: 32px; padding-top: 32px; }
-  .philosophy-quote { font-size: 18px; }
-  .body-copy        { font-size: 16px; }
-  .body-copy--sm    { font-size: 14px; }
-  .about-heading    { font-size: 20px; }
-  .col-label        { margin-bottom: 16px; }
+  /* About — Figma 75:474 */
+  .about-card          { padding: 40px 24px; gap: 40px; }
+  .about-bottom        { grid-template-columns: 1fr; gap: 40px; padding-top: 25px; }
+  .philosophy-quote    { font-size: 20px; line-height: 1.4; }
+  .body-copy           { font-size: 16px; }
+  .body-copy--sm       { font-size: 16px; }
+  .about-heading       { font-size: 20px; }
+  .col-label           { margin-bottom: 24px; }
+  .about-portfolio-btn { width: 100%; align-self: stretch; padding-top: 17px; padding-bottom: 17px; }
 
   /* CTA */
   .cta-tagline { font-size: 15px; line-height: 1.6; }
