@@ -160,14 +160,6 @@ document.querySelectorAll('.cta-btn').forEach(btn => {
   });
 });
 
-// Open from service card hover CTAs (pre-select the service)
-document.querySelectorAll('.service-enquire-btn').forEach(btn => {
-  btn.addEventListener('click', e => {
-    e.stopPropagation();
-    const service = btn.closest('[data-service]').dataset.service;
-    openModal(service);
-  });
-});
 
 // Close via button, overlay click, or Escape
 modalClose.addEventListener('click', closeModal);

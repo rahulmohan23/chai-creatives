@@ -1186,33 +1186,6 @@ body.modal-open { overflow: hidden; }
 .modal-success .modal-sub { margin-bottom: 8px; }
 .modal-success .form-submit { max-width: 200px; }
 
-/* ── SERVICE CARD HOVER CTA ────────────────────────────────────── */
-.service-card { position: relative; }
-
-.service-enquire-btn {
-  position: absolute;
-  bottom: 28px;
-  right: 32px;
-  font-size: 13px;
-  font-weight: 500;
-  font-family: var(--sans);
-  letter-spacing: 0.04em;
-  color: var(--accent);
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  opacity: 0;
-  transform: translateY(6px);
-  transition: opacity 0.25s ease, transform 0.25s ease, color 0.2s ease;
-}
-
-.service-card:hover .service-enquire-btn {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-.service-enquire-btn:hover { color: var(--text); }
 
 /* ── MODAL RESPONSIVE ──────────────────────────────────────────── */
 @media (max-width: 680px) {
