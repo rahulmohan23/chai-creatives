@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.chaicreatives.com/sitemap.xml
+Sitemap: https://chaicreatives.com/sitemap.xml
